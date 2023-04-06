@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Googlestore</title>
+    <link href="static/icons/google.svg" rel="icon">
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- fontawsome  -->
+    <script src="https://kit.fontawesome.com/3d1ad3540b.js" crossorigin="anonymous"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+</head>
+<body>
+   <!--nav bar -->
+    <nav id="navbar" class="navbar col-xl-12 navbar-light bg-light">
+        <a class="navbar-brand" href="www.google.com">
+            <img  src="static/icons/icons8-google.svg" width="30" height="30" alt="">
+        </a>
+        <i class="fa-solid fa-magnifying-glass ml-auto pr-3 fa-lg nav-icons"></i>  
+        <i class="fa-solid fa-circle-question nav-icons  fa-lg pr-3"></i>
+        <i class="fa-solid fa-cart-shopping fa-lg nav-icons pr-3"></i>
+        <i class="fa-solid fa-circle-user fa-2xl text-info"></i>
+
+  </nav>
+  <!-- header -->
+  <header class="jumbotron-fluid">
+    <div class=" col-12 col-sm-12 col-md-12 text-center text-black mx-auto pt-5 font-weight-bold heading" style="font-size: 4.5vw;color: rgb(60, 58, 58);">
+         Welcome to the
+    </div>
+    <div class=" text-center text-black mx-auto font-weight-bold heading" style="font-size: 4.5vw;color: rgb(3, 121, 45); line-height: 2rem;">
+        Google Store
+    </div>
+  </header>
+  <!-- section 1 -->
+  <section class="mt-5 ">
+    <div class="container-fluid row ">
+        <div class=" col-lg-2 col-md-3 col-sm-12 container-fluid mt-5 ">
+            <div class="side-bar">
+            <h6>Product type</h6>
+            <input class="checkbox radio" type="radio" onclick="filterSelection('all')"  name="product-type" value="1" >
+            <label for="connected-home">Show all</label><br>
+            <input class="checkbox radio" type="radio" onclick="filterSelection('connected-home')"  name="product-type" value="1" >
+            <label for="connected-home"> connected home</label><br>
+            <input class="checkbox radio" type="radio" onclick="filterSelection('phone')" name="product-type" value="1">
+            <label for="phone"> phone</label><br>
+            </div>
+        </div>
+        <div class="product col-lg-10 col-md-9  row mt-5">
+            <div class="col-lg-4 col-md-6 col-6  filterDiv phone">
+                <div class="card align-items-center ml-2 bg-light" style="height: 20rem;width: 13rem;">
+                    <img src="static/products/g1.png" alt="" width="200" height="200" class="product-image  my-auto ">
+                </div>
+                <h6 class="ml-2 font-weight-bolder">Pixel 7 pro</h6>
+            </div>
+            <div class="col-lg-4 col-md-6 col-6 filterDiv phone ">
+                <div class="card align-items-center ml-2 bg-light" style="height: 20rem;width: 13rem;">
+                    <img src="static/products/g2.png" alt="" width="200" height="200" class="product-image my-auto ">
+                </div>
+                <h6 class="ml-2 font-weight-bolder">Pixel 7</h6>
+            </div>
+            <div class="col-lg-4 col-md-6  col-6 filterDiv phone">
+                <div class="card align-items-center ml-2 bg-light" style="height: 20rem;width: 13rem;">
+                    <img src="static/products/g3.png" alt="" width="200" height="200" class="product-image my-auto ">
+                </div>
+                <h6 class="ml-2 font-weight-bolder">Pixel 6a</h6>
+            </div>
+            <div class="col-lg-4 col-md-6 col-6  filterDiv connected-home ">
+                <div class="card align-items-center ml-2 bg-light" style="height: 20rem;width: 13rem;">
+                    <img src="static/products/g4.png" alt="" width="200" height="200" class="product-image my-auto ">
+                </div>
+                <h6 class="ml-2 font-weight-bolder">Nest aware</h6>
+            </div>
+            <div class="col-lg-4 col-md-6 col-6 filterDiv connected-home ">
+                <div class="card align-items-center ml-2 bg-light" style="height: 20rem;width: 13rem;">
+                    <img src="static/products/g5.png" alt="" width="200" height="200" class="product-image mx-auto my-auto ">
+                </div>
+                <h6 class="ml-2 font-weight-bolder">Nest cam</h6>
+            </div>
+            <div class="col-lg-4 col-md-6 col-6 filterDiv connected-home  ">
+                <div class="card align-items-center ml-2 bg-light" style="height: 20rem;width: 13rem;">
+                    <img src="static/products/g6.png" alt="" width="200" height="200" class="product-image my-auto " >
+                </div>
+                <h6 class="ml-2 font-weight-bolder">Nest mini</h6>
+            </div>
+            <div class="col-lg-4 col-md-6 col-6 filterDiv connected-home">
+                <div class="card align-items-center ml-2 ml-2 bg-light" style="height: 20rem;width: 13rem;">
+                    <img src="static/products/g7.png" alt="" width="200" height="200" class="product-image my-auto ">
+                </div>
+                <h6 class="ml-2 font-weight-bolder">Nest audio</h6>
+            </div>
+            <div class="col-lg-4 col-md-6 col-6  filterDiv connected-home">
+                <div class="card align-items-center ml-2 bg-light" style="height: 20rem;width: 13rem;">
+                    <img src="static/products/g8.png" alt="" width="200" height="200" class="product-image my-auto ">
+                </div>
+                <h6 class="ml-2 font-weight-bolder">Nest cam charging cable</h6>
+            </div>
+        </div>
+    </div>
+  </section>
+  <!-- section 2 -->
+  <section class="mt-5 row container-fluid">
+        <h6 class="google  "><img  src="static/icons/icons8-google.svg" class="ml-5" width="30" height="30" alt=""> Google Store</h6>
+    <div class="col-xl-8 col-lg-12  "></div>
+    <div class="col-xl-2 col-lg-12 ">
+        <li class="list" style="padding-left: 2.4rem; ">Country avaliability</li>
+    </div>
+    <div class="col-xl-2 col-lg-12 ">
+        <ul>
+            <li class="list">Help center</li>
+            <li class="list">Contact us</li>
+            <li class="list">Device recycling</li>
+        </ul>
+    </div>
+  </section>
+  <!-- footer -->
+  <footer class="mt-5" style="border-top:solid rgb(211, 212, 213);">
+    <div class="container-fluid ">
+        <div class="row">
+            <div class="footer-icon col-xl-7 col-lg-6 col-md-12">
+                <i class="fa-brands fa-twitter mr-2"></i>
+                <i class="fa-brands fa-instagram mr-2"></i>
+                <i class="fa-brands fa-facebook mr-2"></i>
+                <i class="fa-brands fa-youtube mr-2"></i>
+                <i class="fa-brands fa-tiktok"></i>
+            </div>
+            <div class="footer-content col-xl-5 col-lg-6 col-md-12 ">
+                <div class="row ">
+                    <p class="font-weight-normal  "> <img  src="static/icons/india.png" class=" ml-3 " width="25" height="25" alt=""> india</p>
+                    <p class="font-weight-normal ml-3 mt-1 ">Privacy</p>
+                    <p class="font-weight-normal ml-3  mt-1 ">Google Nest Commitment to Privacy</p>
+                    <p class="font-weight-normal ml-3  mt-1 ">Sales Terms</p>
+                    <p class="font-weight-normal ml-3 mt-1 ">Terms of Service</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  </footer>
+  <!-- filter -->
+  <script>
+    filterSelection("all")
+    function filterSelection(c) {
+      var x, i;
+      x = document.getElementsByClassName("filterDiv");
+      if (c == "all") c = "";
+      for (i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+      }
+    }
+    
+    function w3AddClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+      }
+    }
+
+    
+    function w3RemoveClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+          arr1.splice(arr1.indexOf(arr2[i]), 1);     
+        }
+      }
+      element.className = arr1.join(" ");
+    }
+    </script>
+    <!-- bootstrap js  -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

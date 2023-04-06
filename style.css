@@ -1,0 +1,62 @@
+.nav-icons:hover {
+    color: rgb(13, 156, 233);
+}
+.heading{
+    font-family:sans-serif;
+}
+.product-image{
+    transition: transform .5s;
+}
+.product-image:hover{
+    -webkit-transform: scale(1.5); 
+    transform: scale(1.05);
+}
+.card{
+
+    border: none !important;
+}
+@media (min-width: 600px) {
+    .google {
+      display: none;
+    }
+
+}
+@media (max-width: 1000px) {
+    .fa-circle-question{
+      display: none !important;
+    }
+
+}
+.list{
+    list-style: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+.list:hover{
+    color: rgb(0, 166, 255);
+}
+.footer-content{
+    cursor: pointer;
+    font-size: 10.5px;
+    color: rgb(99, 96, 96);
+}
+.footer-icon{
+    cursor: pointer;
+}
+
+.navbar{
+    position: fixed !important;
+    z-index: 1 !important;
+}
+.side-bar{
+    position: sticky !important;
+}
+.filterDiv{
+    display: none;
+}
+.show {
+    display: block;
+  }
+label{
+    font-size: 2vh;
+}
